@@ -1,23 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head >
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tradeify|All in one</title>
+    <title>Tradeify | Buy.Sell.Bid</title>
     <link rel="stylesheet" href="home.css">
+    <script>
+        function toggle(){
+            
+            var show = document.getElementById('search-container');
+            
+            search-container.classList.toggle('active');
+    }
+    </script>
 </head>
 <body>
     <div class="navigation">
         <a href="home.html" class="headname"><img src="Screenshot_2023-05-03_082016-removebg-preview.png" alt=""></a>
       
-
-        <a href="" class="navbar">Search</a>
-        <a href="" class="navbar">Chat</a>
-        <a href="" class="navbar">Bid</a>
-        <a href="sell.html" class="navbar">Sell with us</a>
+        <div class="nav-menu">
         <a href="home.html" class="navbar">Home</a>
+        <a href="sell.html" class="navbar">Sell with us</a>
+        <a href="" class="navbar">Bid</a>
+        <a href="" class="navbar">Chat</a>
+        <div class="search-container" id="search-container">
+            <form id="searchbar">
+                <div class="search">
+                    <input type="text" placeholder="Search..." class="inps">
+                    <button type="submit">Search</button>
+                </div>
+            </form>
+        </div>
+        <a href="#" class="nav-button">Login</a>
     </div>
+    </div>
+<div class="main-container">
+    <!--code here-->
 
+
+    
+</div> 
 </body>
 </html>
