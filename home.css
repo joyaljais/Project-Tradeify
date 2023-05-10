@@ -1,0 +1,25 @@
+body{
+           
+    background: url(pexels-pixabay-326333.jpg);
+    background-size:cover;
+    position:relative;
+    background-repeat: no-repeat;
+    background-size: 100% ;
+
+    scroll-behavior: smooth;
+}
+.headname img{
+    width: 300px;
+    margin-top: 20px;
+}
+
+.navbar{
+    font-size: 20px;
+    padding: 2px;
+    text-decoration: none;
+    color: #fff;
+    margin-right: 40px;
+    float:right;
+    margin-top: 30px;
+}
+
