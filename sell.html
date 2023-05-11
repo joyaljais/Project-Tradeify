@@ -4,44 +4,75 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tradeify|All in one</title>
+    <title>Tradeify | Seller Zone</title>
     <link rel="stylesheet" href="home.css">
     <link rel="stylesheet" href="sell.css">
+    <script src="onclick.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="navigation">
-        <a href="home.html" class="headname1"><img src="1683722896742-thumbnail-removebg-preview.png" alt=""></a>
-      
-
-        <a href="" class="navbar">Search</a>
-        <a href="" class="navbar">Chat</a>
-        <a href="" class="navbar">Bid</a>
-        <a href="" class="navbar">Sell with us</a>
-        <a href="home.html" class="navbar">Home</a>
+        <div class="logo">
+            <a href="home.html" class="headname1"><img src="sellerzone.png" alt=""></a>
+        </div>
+        <div class="menu">
+        
+            <a href="home.html" class="navbar">Home</a>
+            <a href="" class="navbar">FAQs</a>
+            <a href="" class="navbar">Contact</a>
+        <a href="#" class="nav-button" id="nav-button" onclick="onClick2()">Log in</a>
+        </div>
+    </div>
+    <div class="loginpage-bg" id="loginpage-bg" >
+        <div class="login-page" id="login-page">
+            <div class="left-ad1">
+                <div class="login-txt">
+                    <h1>Login</h1>
+                </div>
+                <div class="middle-sec">
+                    <p>Login to discover exclusive auctions, personalized recommendations and more!</p>
+                </div>
+                <div class="comp-logo">
+                    <img class="comp-logo" src="sellerzone.png" alt="Tradeify Logo">
+                </div>
+            </div>
+            <div class="right-ad1">
+                <div class="top-close">
+                    <img class="close" src="close.png" alt="close button" onclick="onClick2()">
+                </div>
+                <div class="bot-login">
+                        <form id="login-form-main">
+                            <label id="label1" for="email-or-phone">Enter your E-mail/Phone number</label>
+                            <input type="text" id="email-or-phone" name="email-or-phone">
+                            <p id="t-and-c">By continuing, you agree to Tradeify's <span id="t-o-u">Terms of Use</span> and <span id="p-p">Privacy Policy</span>.</p>
+                            <button id="login-btn" type="submit">Request OTP</button>
+                            <center><p><a href="register.html" id="sign-up">Don't have an account yet? Sign up here!</a></p></center>
+                          </form>
+                          
+                </div>
+            </div>
+        </div>
     </div>
 
-
-
-    <div class="content">
-		<!-- content goes here -->
-        <a href="" class="sm1">Sell for fixed price</a>
-
-        <p>
-            Selling a product requires a strategic approach that effectively<br> communicates the value of the product to potential customers<br> and convinces them to make a purchase.
-
-        </p>
-	</div>
-	<div class="line"></div>
-	<div class="content">
-		<!-- content goes here -->
-        <a href="" class="sm2" style="width: 100px;">Sell through bidding </a>
-
-        <p>Bidding on a product is a competitive process where buyers attempt<br> to secure the product by submitting increasingly higher bids until a final bid<br> is accepted. Successful bidders typically pay the final bid amount and<br> are responsible for arranging for delivery or pickup of the product.</p>
-	</div>
+    <div class="main-container">
+        <div class="content">
+            <!-- content goes here -->
+            <a href="" id="btn-choice" class="sm1">Sell for fixed price</a>
     
-
+            <p id="disc">
+                Selling a product requires a strategic approach that effectively<br> communicates the value of the product to potential customers<br> and convinces them to make a purchase.
+    
+            </p>
+        </div>
+        <div class="line"></div>
+        <div class="content">
+            <!-- content goes here -->
+            <a href="" id="btn-choice" class="sm2">Sell through bidding </a>
+    
+            <p id="disc">Bidding on a product is a competitive process where buyers<br>attempt to secure the product by submitting increasingly higher <br>bids until a final bid is accepted and purchased.</p>
+        </div>
+    </div>
 </body>
 </html> 
