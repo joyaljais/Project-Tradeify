@@ -2,6 +2,7 @@
 body{
     padding: 0%;
     margin: 0%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .headname img{
@@ -53,7 +54,7 @@ body{
     padding: 13px;
   }
 
-  form {
+  form#searchbar {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -61,7 +62,7 @@ body{
     overflow: hidden;
   }
  
-  input[type="text"] {
+  input[type="text"].inps {
     border: none;
     padding: 10px;
     flex-grow: 1;
@@ -74,7 +75,7 @@ body{
   .inps::placeholder {
     color: rgb(114, 114, 114);
   }
-  button[type="submit"] {
+  button[type="submit"]#search1 {
     background-color: #FC9905;
     border: none;
     color: #fff;
@@ -86,4 +87,120 @@ body{
 .inps:focus {
     outline: none;
   }
+.loginpage-bg{
+  height: 100vh;
+  width: 100%;
+  background-color: #0000008c;
+  position: fixed;
+  top: 0;
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  display: none;
   
+}
+.login-page{
+  background-color: white;
+  height: 72vh;
+  width: 50%;
+  display: flex;
+}
+.loginpage-bg.active{
+  display: grid;
+}
+.left-ad1{
+  background-color: #02001d;
+  height: 100%;
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.right-ad1{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  /* padding: 50px; */
+  flex-direction: column;
+}
+.top-close{
+  width: 100%;
+  height: 15%;
+  display: grid;
+  justify-content: end;
+}
+img.close {
+  width: 16px;
+  padding: 14px;
+  cursor: pointer;
+}
+.comp-logo{
+  width: 18em;
+}
+.login-txt{
+  color: #fff;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 16px;
+  padding-left: 20px;
+}
+.middle-sec{
+  padding: 20px;
+  color: white;
+  font-size: 20px;
+  margin: 0;
+  line-height: 35px;
+}
+.bot-login{
+  height: 100%;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+form#login-form-main{
+  width: 80%;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  padding-top: 4em;
+}
+label#label1{
+  font-size: 12px;
+  font-weight: 400;
+  color: grey;
+  padding: 10px 0px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+input[type="text"]#email-or-phone{
+  border: 0;
+  border-bottom: 1px solid grey;
+  height: 1.5em;
+  outline: none;
+}
+
+p#t-and-c{
+  color: grey;
+  font-size: 12px;
+  font-style: oblique;
+  padding: 10px 0px;
+}
+span#t-o-u,span#p-p{
+  text-decoration: none;
+  color: #0057ff;
+  cursor: pointer;
+}
+button#login-btn{
+  border-radius: 4px;
+    border: 0;
+    font-size: 13px;
+    padding: 7px;
+    background-color: #FC9905;
+    color: white;
+    cursor: pointer;
+}
+a#sign-up{
+  text-decoration: none;
+  color: #0057ff;
+  font-size: 14px;
+  font-weight: 500;
+}
