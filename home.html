@@ -6,18 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tradeify | Buy.Sell.Bid</title>
     <link rel="stylesheet" href="home.css">
-    <script>
-        function toggle(){
-            
-            var show = document.getElementById('search-container');
-            
-            search-container.classList.toggle('active');
-    }
-    </script>
+    <script src="onclick.js"></script>
 </head>
 <body>
     <div class="navigation">
-        <a href="home.html" class="headname"><img src="Screenshot_2023-05-03_082016-removebg-preview.png" alt=""></a>
+        <a href="home.html" class="headname"><img src="mainlogo.png" alt=""></a>
       
         <div class="nav-menu">
         <a href="home.html" class="navbar">Home</a>
@@ -28,12 +21,42 @@
             <form id="searchbar">
                 <div class="search">
                     <input type="text" placeholder="Search..." class="inps">
-                    <button type="submit">Search</button>
+                    <button id="search1" type="submit">Search</button>
                 </div>
             </form>
         </div>
-        <a href="#" class="nav-button">Login</a>
+        <a href="#" class="nav-button" id="nav-button" onclick="onClick2()">Log in</a>
     </div>
+    </div>
+    <div class="loginpage-bg" id="loginpage-bg" >
+        <div class="login-page" id="login-page">
+            <div class="left-ad1">
+                <div class="login-txt">
+                    <h1>Login</h1>
+                </div>
+                <div class="middle-sec">
+                    <p>Login to discover exclusive offers, personalized recommendations and more!</p>
+                </div>
+                <div class="comp-logo">
+                    <img class="comp-logo" src="mainlogo.png" alt="Tradeify Logo">
+                </div>
+            </div>
+            <div class="right-ad1">
+                <div class="top-close">
+                    <img class="close" src="close.png" alt="close button" onclick="onClick2()">
+                </div>
+                <div class="bot-login">
+                        <form id="login-form-main">
+                            <label id="label1" for="email-or-phone">Enter your E-mail/Phone number</label>
+                            <input type="text" id="email-or-phone" name="email-or-phone">
+                            <p id="t-and-c">By continuing, you agree to Tradeify's <span id="t-o-u">Terms of Use</span> and <span id="p-p">Privacy Policy</span>.</p>
+                            <button id="login-btn" type="submit">Request OTP</button>
+                            <center><p><a href="register.html" id="sign-up">Don't have an account yet? Sign up here!</a></p></center>
+                          </form>
+                          
+                </div>
+            </div>
+        </div>
     </div>
 <div class="main-container">
     <!--code here-->

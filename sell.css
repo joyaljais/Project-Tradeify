@@ -3,66 +3,54 @@ h3{
     font-size:40px;
     font-family: 'Roboto Condensed', sans-serif;
 }
-
-.headname1 img{
-    width: 300px;
-    margin-top: 5px;
+.navigation{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo img{
+    width: 19em;
+    padding-top: 17px;
+}
+.menu{
+    margin-right: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
-.navbar1{
-    text-decoration: none;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 17px;
+.nav-button {
+    font-size: 13px;
     color: white;
-    margin-top: 30px;
-    
-}
-
+    margin: 0 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 7px 24px;
+    border-radius: 4px;
+    background-color: #FC9905;
+    text-decoration: none;
+  }
 .line {
-    border-left: 2px solid rgb(0 0 0 / 11%); /* 1px solid black border on the left */
-    height: 50%; /* sets the height of the div to 100% of the parent element */
-    position: absolute; /* positions the div absolutely */
-    left: 50%; /* positions the div in the center */
-    margin-left: -1px; /* corrects the position by offsetting the border width */
-    top: 30%;
+    width: 2px;
+    background-color: rgb(0 0 0 / 11%);/* 1px solid black border on the left */
+    height: 30em;
+    margin-top: 40px; /* sets the height of the div to 100% of the parent element */
 }
 
 .content {
-    width: 50%; /* sets the width of the content to 50% */
-    float: left; /* floats the content to the left */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .content, .sm1, .sm2{
     text-decoration: none;
-    
-    margin-top: 140px;
-    font-size: 20px;
-    border-radius: 10px;
+    font-size: 18px;
+    border-radius: 4px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     
 }
-
-.sm1{
-    display:unset;
-    margin-left: 300px;
-    width: 200px;
-    height: 30px;
-    padding: 2%;
-    background-color: #FC9905;
-    color: whitesmoke;
-
-}
-.sm2{
-    display:unset;
-    margin-left: 300px;
-    width: 200px;
-    height: 30px;
-    padding: 2%;
-    background-color: #FC9905;
-    color: whitesmoke;
-}
-
-p{
+p#disc{
     text-align: center;
     font-style: italic;
     color: #747373;
@@ -70,4 +58,131 @@ p{
     line-height: 2;
     margin-top: 50px;
 }
-
+loginpage-bg{
+    height: 100vh;
+    width: 100%;
+    background-color: #0000008c;
+    position: fixed;
+    top: 0;
+    display: grid;
+    align-content: center;
+    justify-items: center;
+    display: none;
+    
+  }
+  .login-page{
+    background-color: white;
+    height: 72vh;
+    width: 50%;
+    display: flex;
+  }
+  .loginpage-bg.active{
+    display: grid;
+  }
+  .left-ad1{
+    background-color: #02001d;
+    height: 100%;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .right-ad1{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    /* padding: 50px; */
+    flex-direction: column;
+  }
+  .top-close{
+    width: 100%;
+    height: 15%;
+    display: grid;
+    justify-content: end;
+  }
+  img.close {
+    width: 16px;
+    padding: 14px;
+    cursor: pointer;
+  }
+  .comp-logo{
+    width: 18em;
+  }
+  .login-txt{
+    color: #fff;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    padding-left: 20px;
+  }
+  .middle-sec{
+    padding: 20px;
+    color: white;
+    font-size: 20px;
+    margin: 0;
+    line-height: 35px;
+  }
+  .bot-login{
+    height: 100%;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+  }
+  form#login-form-main{
+    width: 80%;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    padding-top: 4em;
+  }
+  label#label1{
+    font-size: 12px;
+    font-weight: 400;
+    color: grey;
+    padding: 10px 0px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  input[type="text"]#email-or-phone{
+    border: 0;
+    border-bottom: 1px solid grey;
+    height: 1.5em;
+    outline: none;
+  }
+  
+  p#t-and-c{
+    color: grey;
+    font-size: 12px;
+    font-style: oblique;
+    padding: 10px 0px;
+  }
+  span#t-o-u,span#p-p{
+    text-decoration: none;
+    color: #0057ff;
+    cursor: pointer;
+  }
+  button#login-btn{
+    border-radius: 4px;
+      border: 0;
+      font-size: 13px;
+      padding: 7px;
+      background-color: #FC9905;
+      color: white;
+      cursor: pointer;
+  }
+  a#sign-up{
+    text-decoration: none;
+    color: #0057ff;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .main-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  a#btn-choice{
+    background-color: #FC9905;
+    padding: 10px;
+    color: white;
+  }
