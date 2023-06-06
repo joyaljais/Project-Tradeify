@@ -7,27 +7,35 @@
     <title>Tradeify | Buy.Sell.Bid</title>
     <link rel="stylesheet" href="home.css">
     <script src="onclick.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <div class="navigation">
-        <a href="home.html" class="headname"><img src="mainlogo.png" alt=""></a>
-      
         <div class="nav-menu">
-        <a href="home.html" class="navbar">Home</a>
-        <a href="sell.html" class="navbar">Sell with us</a>
-        <a href="" class="navbar">Bid</a>
-        <a href="" class="navbar">Chat</a>
-        <div class="search-container" id="search-container">
-            <form id="searchbar">
+            <div class="logo-div">
+                <img src="mainlogo.png" alt="" class="headname">
                 <div class="search">
-                    <input type="text" placeholder="Search..." class="inps">
-                    <button id="search1" type="submit">Search</button>
+                    <input type="text" class="search__input" placeholder=Search...>
+                    <button id="search-button" class="fa fa-search" type="submit"></button>
+                    
                 </div>
-            </form>
+            </div>
+            <div class="menu-div">
+                <a href="#" class="nav-button" id="nav-button" onclick="onClick2()">Login</a>
+                <a href="sell.html" class="navbar">Sell Now</a>
+                <!-- <a href="" class="navbar">Chat</a> -->
+                <div class="dropdown">
+                    <span id="dropdown-more">More ⏷</span>
+                    <div class="dropdown-content">
+                        <a href="#" class="dropdown-item">Notification</a>
+                        <a href="#" class="dropdown-item">Advertise</a>
+                        <a href="#" class="dropdown-item">Customer Care</a>
+                    <!-- <a href="#" class="dropdown-item">Option 4</a>
+                    <a href="#" class="dropdown-item">Option 5</a>-->
+                    </div>
+                </div>
+            </div>
         </div>
-        <a href="#" class="nav-button" id="nav-button" onclick="onClick2()">Log in</a>
-    </div>
-    </div>
+    
     <div class="loginpage-bg" id="loginpage-bg" >
         <div class="login-page" id="login-page">
             <div class="left-ad1">
