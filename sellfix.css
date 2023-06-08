@@ -1,0 +1,241 @@
+input{
+    align-items: center;
+}
+
+#insertionPoint {
+    margin-top: 40px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+/*category text input blind*/
+.text-bar {
+    display: none;
+    margin-top: 10px;
+}
+/*complete page alignment*/
+body{
+    margin-left: 5%;
+}
+
+/*textbar hovering method common effect*/
+
+.text-box {
+    position: relative;
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+.text-box input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s;
+}
+
+.text-box:hover input {
+    border-color: #999;
+}
+
+.text-box input:focus {
+    outline: none;
+    border-color: #555;
+}
+
+/*input box round border effect*/
+#textInput{
+    border-radius: 10rem;
+    width: 20rem;
+}
+/*Individual settings*/
+
+/*namebox*/
+.tb1 label {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-60%);
+    padding: 0 5px;
+    background-color: #fff;
+    color: #746d6d;
+    transition: all 0.3s;
+}
+
+.tb1:hover label,
+.tb1 input:focus + label {
+    top: 0;
+    transform: translateY(-40%);
+    font-size: 12px;
+   /* background-color: #f8f8f8;*/
+}
+
+
+/*price box*/
+.tb2 label {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-60%);
+    padding: 0 5px;
+    background-color: #fff;
+    color: #746d6d;
+    transition: all 0.3s;
+    align-content: center;
+}
+
+.tb2:hover label,
+.tb2 input:focus + label {
+    top: 0;
+    transform: translateY(-40%);
+    font-size: 12px;
+   /* background-color: #f8f8f8;*/
+}
+
+
+/*Quantity, name, email, contact box*/
+.tb3 label {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-60%);
+    padding: 0 5px;
+    background-color: #fff;
+    color: #746d6d;
+    transition: all 0.3s;
+    align-content: center;
+}
+
+.tb3:hover label,
+.tb3 input:focus + label {
+    top: 0;
+    transform: translateY(-40%);
+    font-size: 12px;
+   /* background-color: #f8f8f8;*/
+}
+
+
+/*Description Box*/
+.tb4 label {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-300%);
+    padding: 0 5px;
+    background-color: #fff;
+    color: #746d6d;
+    transition: all 0.3s;
+    align-content: center;
+}
+
+.tb4:hover label,
+.tb4 input:focus + label {
+    top: 0;
+    transform: translateY(-40%);
+    font-size: 12px;
+   /* background-color: #f8f8f8;*/
+}
+
+/*Address*/
+.tb5 label {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-100%);
+    padding: 0 5px;
+    background-color: #fff;
+    color: #746d6d;
+    transition: all 0.3s;
+    align-content: center;
+}
+
+.tb5:hover label,
+.tb5 input:focus + label {
+    top: 0;
+    transform: translateY(-40%);
+    font-size: 12px;
+   /* background-color: #f8f8f8;*/
+}
+
+
+#textInput1{
+    border-radius: 1rem;
+    width: 50rem;
+    resize: none;
+    overflow: auto;
+    
+}
+
+
+.text-box textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s;
+}
+
+.text-box:hover textarea {
+    border-color: #999;
+}
+
+.text-box textarea:focus {
+    outline: none;
+    border-color: #555;
+}
+
+/*Dropdownbox hover effect*/
+
+.custom-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.custom-dropdown select {
+    width: 200px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.custom-dropdown select:hover {
+    border-color: #999;
+}
+
+.custom-dropdown select:focus {
+    outline: none;
+    border-color: #555;
+}
+
+.custom-dropdown .placeholder-label {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-100%);
+    padding: 0 5px;
+    background-color: #fff;
+    color: #746d6d;
+    pointer-events: none;
+    transition: all 0.3s;
+}
+
+.custom-dropdown select:hover + .placeholder-label,
+.custom-dropdown select:focus + .placeholder-label,
+.custom-dropdown select:valid + .placeholder-label {
+    top: 0;
+    transform: translateY(-40%);
+    font-size: 12px;
+    background-color: #f8f8f8;
+}
+
+#dropdown{
+    border-radius: 10rem;
+    width: 21.5rem;
+}
+
+.input-container input[type="text"]:focus + label,
+        .input-container input[type="text"]:valid + label {
+            top: 0;
+            font-size: 12px;
+            color: #555;
+            background-color: #fff;
+            padding: 0 5px;
+        }

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="sellfix.css">
+    
+
+</head>
+<body>
+
+    <form action="">
+        Name of the product:<input type="text" name="" id="">
+        <br><br>
+    </form>
+        Category:<select id="dropdown">
+            <option value="" selected disabled hidden>Select one</option>
+            <option value="mobile">Mobiles & Tablets</option>
+            
+            <option value="others">New Category</option>
+            
+        </select><br>
+
+        <div id="textBar" class="text-bar">
+
+            <input type="text" id="newOptionInput" placeholder="Enter text">
+            <button id="addOptionButton">Add Option</button>
+    
+        </div>
+        <br>
+        <form action="">
+        Starting Price:<input type="text" name="" id="">
+        <br><br>
+        Number of items:<input type="number" name="" id="">
+        <br><br>
+        Description:<textarea name="" id="" cols="100" rows="10"></textarea>
+        <br><br>
+        Date of Auction:<input type="date" name="" id="">
+        <br><br>
+        Starting time:<input type="time" name="" id="">
+        <br><br>
+        Ending time:<input type="time" name="" id="">
+        <br><br>
+        <form action="upload.php" method="post" enctype="multipart/form-data">
+            <input type="file" name="images[]" multiple>
+            <input type="submit" value="Done">
+        </form>        
+        <br><br>
+
+        <hr>
+        <br><br>
+        Details of the seller
+        <br><br>
+        Name:<input type="text" name="" id="">
+        <br><br>
+        Email:<input type="text" name="" id="">
+        <br><br>
+        Contact:<input type="text" name="" id="">
+        <br><br>
+        Address:<textarea rows="3" cols="100"></textarea>
+        <br><br>
+
+        <input type="submit" value="Upload">
+    </form>
+
+
+    <script>
+        var dropdown = document.getElementById('dropdown');
+        var textBar = document.getElementById('textBar');
+
+        dropdown.addEventListener('change', function() {
+            var selectedOption = this.options[this.selectedIndex].value;
+
+            if (selectedOption === 'others') {
+                textBar.style.display = 'block';
+                document.getElementById('dropdown').addEventListener('change', function() {
+                    var selectedText = this.options[this.selectedIndex].text;
+                    var insertionPoint = document.getElementById('insertionPoint');
+                    insertionPoint.innerHTML = selectedText;
+                });
+
+                
+                
+                document.getElementById('addOptionButton').addEventListener('click', function() {
+                    var newOptionText = document.getElementById('newOptionInput').value;
+                    var dropdown = document.getElementById('dropdown');
+                
+                    // Create a new option element
+                    var newOption = document.createElement('option');
+                    newOption.value = 'text' + (dropdown.options.length + 1); // Assign a unique value
+                    //Display the text
+                    newOption.text = newOptionText;
+                    index=dropdown.options.length;
+                
+                    // Append the new option to the dropdown
+                    dropdown.add(newOption, index-1);
+
+                    var dropdown = document.getElementById('dropdown');
+                    var options = dropdown.options;
+
+                    for (var i = options.length - 1; i >= 0; i--) {
+                        var option = options[i];
+
+                        if (!option.value || !option.text) {
+                            dropdown.remove(i);
+                        }
+                    }
+                
+                    // Clear the input field
+                    document.getElementById('newOptionInput').value = '';
+
+                    textBar.style.display = 'none';
+                });
+            } else {
+                textBar.style.display = 'none';
+            }
+            
+        });
+        
+    </script>
+</body>
+</html>

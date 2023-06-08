@@ -5,75 +5,89 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <link rel="stylesheet" href="sellfix.css">
+    
+
 </head>
 <body>
 
+    <div class="text-box tb1">
+
     <form action="">
-        Name of the product:<input type="text" name="" id="">
-        <br><br>
-        Category:<select name="cate" id="cate">
-            <option value="" selected disabled hidden>Select one</option>
-            <option value="mobile">Mobile</option>
-            <option value="mobile-acc">Mobie Accessories</option>
+        <input type="text" id="textInput" class="topname" required>
+        <label for="textInput">Product Name</label>
+      
+    </form>
+</div>
+    <div class="custom-dropdown">
+        <select id="dropdown" class="topname" required>
+            <option value="" selected disabled hidden></option>
+            <option value="mobile">Mobiles & Tablets</option>
+            <option value="mobile-acc">Mobile Accessories</option>
             <option value="laptop">Laptop</option>
-            <option value="smartwear">Smart Wearable tech</option>
             <option value="deskpc">Desktop PC</option>
-            <option value="gameacc">Gaming & Accessories</option>
-            <option value="compacc">Computer Accessories</option>
-            <option value="compperi">Computer Peripherals</option>
-            <option value="tab">Tablets</option>
+            <option value="compacc">Computer & Gaming Accessories</option>
+            <option value="smartwear">Smart Wearable tech</option>
+            <option value="watch">Watches</option>
             <option value="speaker">Speakers</option>
-            <option value="smartauto">Smart Home Automation</option>
             <option value="cam">Camera</option>
             <option value="camacc">Camera Accessories</option>
             <option value="netcomponent">Network Components</option>
-            <option value="tv">Television</option>
-            <option value="washmach">Washing Machine</option>
-            <option value="ac">Air Conditioner</option>
-            <option value="fridge">Refrigerator</option>
+            <option value="homeapp">Home Appliances</option>
+            <option value="smartauto">Smart Home Appliances</option>
             <option value="kitchenapp">Kitchen Appliances</option>
-            <option value="homeapp">Small Home Appliances</option>
-            <option value="footwear">Footwear</option>
+            <option value="Kitchen,Cookware&Serveware">Kitchen, Cookware & Serveware</option>
             <option value="groom">Beauty & Grooming</option>
             <option value="cloth">Clothing</option>
-            <option value="innwear">Innerwears</option>
-            <option value="raincoat">Raincoat & Windcheater</option>
-            <option value="watch">Watches</option>
+            <option value="footwear">Footwear</option>
             <option value="sports">Sports & Fitness Store</option>
             <option value="personare">Personal Care Appliances</option>
             <option value="Jewel">Jewellery</option>
             <option value="schoolsupply">School Supplies</option>
             <option value="baby">Baby care</option>
-            <option value="Kitchen,Cookware&Serveware">Kitchen, Cookware & Serveware</option>
-            <option value="Table&Dinner">Tableware & Dinnerware</option>
-            <option value="kitchenstorage">Kitchen Storage</option>
             <option value="cleansupply">Cleaning Supply</option>
-            <option value="bedfurniture">Bed Room Furniture</option>
-            <option value="livingfurniture">Living Room Furniture</option>
-            <option value="ofiicefurniture">Office & Study Furniture</option>
-            <option value="diyfurniture">DIY Furniture</option>
-            <option value="furnishing">Furnishing</option>
-            <option value="homedecor">Home Decor</option>
-            <option value="homelighting">Home Lighting</option>
-            <option value="festivedecor">Festive Decor & Gifts</option>
+            <option value="furniture">Furniture</option>
+            <option value="homedecor">Home Decor & Lighting</option>
             <option value="petsupply">Pet Supplies</option>
             <option value="gardening">Gardening</option>
-            <option value="sports">Sports</option>
-            <option value="exercise">Exercise Fitness</option>
             <option value="food">Food Essentials</option>
             <option value="book">Books</option>
-            <option value="autoacc">Auto Accessories</option>
+            <option value="autoacc">Automobile Accessories</option>
             <option value="stationery">Stationery</option>
             <option value="instrytool">Industrial & Scientific Tool</option>
-            <option value="medical">Medical Supplies</option>
-            <option value="music">Music</option>
-            <option value="gaming">Gaming</option>
-        </select><br><br>
-        Price:<input type="text" name="" id="">
+            <option value="others">New Category</option>
+            
+        </select>
+        <label class="placeholder-label" for="dropdown">Category</label>
         <br><br>
-        Quantity:<input type="text" name="" id="">
+    </div>
+        <div id="textBar" class="text-bar">
+
+            <input type="text" id="newOptionInput" placeholder="Enter text">
+            <button id="addOptionButton">Add Option</button>
+    
+        </div>
+        <br>
+        
+        <form action="">
+        <div class="text-box tb2">
+            <input type="text" id="textInput" class="topname" required>
+            <label for="textInput">Price</label>
+        </div>
         <br><br>
-        Description:<textarea name="" id="" cols="100" rows="10"></textarea>
+        <div class="text-box tb3">
+            <input type="text" id="textInput" class="topname" required>
+            <label for="textInput">Quantity</label>
+        </div>
+        <br><br>
+            
+        <div class="text-box tb4">
+        <textarea name="" id="textInput1" cols="100" rows="10" class="topname" required>
+        </textarea>
+        <label for="textInput1"> Description</label>
+
+        </div>
         <br><br>
         <form action="upload.php" method="post" enctype="multipart/form-data">
             <input type="file" name="images[]" multiple>
@@ -85,17 +99,107 @@
         <br><br>
         Details of the seller
         <br><br>
-        Name:<input type="text" name="" id="">
+        <div class="text-box tb3">
+            <input type="text" id="textInput" class="topname" required>
+            <label for="textInput">Name</label>
+        </div>        <br><br>
+        <div class="text-box tb3">
+            <input type="email" id="textInput" class="topname" required>
+            <label for="textInput">E-mail</label>
+        </div>        <br><br>
+<div class="text-box tb3">
+            <input type="text" id="textInput" class="topname" required>
+            <label for="textInput">Contact</label>
+        </div>        <br><br>
+        <div class="text-box tb5">
+            <textarea rows="3" cols="100" id="textInput1"></textarea>
+            <label for="textInput">Address</label>
+        </div>
         <br><br>
-        Email:<input type="text" name="" id="">
-        <br><br>
-        Contact:<input type="text" name="" id="">
-        <br><br>
-        Address:<input type="text" name="" id="">
-        <br><br>
-
+    
+        
         <input type="submit" value="Upload">
     </form>
 
+
+    <script>
+        var dropdown = document.getElementById('dropdown');
+        var textBar = document.getElementById('textBar');
+
+        dropdown.addEventListener('change', function() {
+            var selectedOption = this.options[this.selectedIndex].value;
+
+            if (selectedOption === 'others') {
+                textBar.style.display = 'block';
+                document.getElementById('dropdown').addEventListener('change', function() {
+                    var selectedText = this.options[this.selectedIndex].text;
+                    var insertionPoint = document.getElementById('insertionPoint');
+                    insertionPoint.innerHTML = selectedText;
+                });
+
+                
+                
+                document.getElementById('addOptionButton').addEventListener('click', function() {
+                    var newOptionText = document.getElementById('newOptionInput').value;
+                    var dropdown = document.getElementById('dropdown');
+                
+                    // Create a new option element
+                    var newOption = document.createElement('option');
+                    newOption.value = 'text' + (dropdown.options.length + 1); // Assign a unique value
+                    //Display the text
+                    newOption.text = newOptionText;
+                    index=dropdown.options.length;
+                
+                    // Append the new option to the dropdown
+                    dropdown.add(newOption, index-1);
+
+                    var dropdown = document.getElementById('dropdown');
+                    var options = dropdown.options;
+
+                    for (var i = options.length - 1; i >= 0; i--) {
+                        var option = options[i];
+
+                        if (!option.value || !option.text) {
+                            dropdown.remove(i);
+                        }
+                    }
+                
+                    // Clear the input field
+                    document.getElementById('newOptionInput').value = '';
+
+                    textBar.style.display = 'none';
+                });
+            } else {
+                textBar.style.display = 'none';
+            }
+            
+        });
+        
+
+
+        var input = document.getElementById('textInput');
+        /*var input = document.getElementsByClassName('topname');*/
+        var label = input.nextElementSibling;
+
+        
+        input.addEventListener('focus', function() {
+            label.style.top = '0';
+            label.style.fontSize = '12px';
+            label.style.color = '#555';
+            label.style.backgroundColor = '#fff';
+            label.style.padding = '0 5px';
+        });
+
+        input.addEventListener('blur', function() {
+            if (!input.value) {
+                label.style.top = '50%';
+                label.style.fontSize = '';
+                label.style.color = '#999';
+                label.style.backgroundColor = '';
+                label.style.padding = '';
+            }
+        });
+        
+    </script>
 </body>
 </html>
