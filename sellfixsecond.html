@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tradeify|Seller Zone</title>
+    <link rel="stylesheet" href="sellfixsecond.css">
+    <link rel="stylesheet" href="sell.css">
+    <script src="onclick.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <div class="navigation">
+        <div class="logo">
+            <a href="home.html" class="headname1"><img src="sellerzone.png" alt=""></a>
+        </div>
+        <div class="menu">
+            <a href="home.html" class="navbar-sellpage">Home</a>
+            <a href="" class="navbar-sellpage">FAQs</a>
+            <a href="" class="navbar-sellpage">Contact</a>
+            <a href="#" class="nav-button" id="nav-button" onclick="onClick2()">Login</a>
+        </div>
+    </div>
+    <div class="loginpage-bg" id="loginpage-bg" >
+        <div class="login-page" id="login-page">
+            <div class="left-ad1">
+                
+            </div>
+        </div>
+    </div>
+    <div class="details">
+        <p class="sellhead">Product Details</p>
+
+
+    <div class="text-box tb1">
+
+        <form action="">
+            <input type="text" id="textInput" class="topname" required>
+            <label for="textInput">Product Name</label>
+          
+        </form>
+        
+    </div>
+    <br><br>
+        <div class="custom-dropdown">
+            <select id="dropdown" class="topname" required>
+                <option value="" selected disabled hidden></option>
+                <option value="mobile">Mobiles & Tablets</option>
+                <option value="mobile-acc">Mobile Accessories</option>
+                <option value="laptop">Laptop</option>
+                <option value="deskpc">Desktop PC</option>
+                <option value="compacc">Computer & Gaming Accessories</option>
+                <option value="smartwear">Smart Wearable tech</option>
+                <option value="watch">Watches</option>
+                <option value="speaker">Speakers</option>
+                <option value="cam">Camera</option>
+                <option value="camacc">Camera Accessories</option>
+                <option value="netcomponent">Network Components</option>
+                <option value="homeapp">Home Appliances</option>
+                <option value="smartauto">Smart Home Appliances</option>
+                <option value="kitchenapp">Kitchen Appliances</option>
+                <option value="Kitchen,Cookware&Serveware">Kitchen, Cookware & Serveware</option>
+                <option value="groom">Beauty & Grooming</option>
+                <option value="cloth">Clothing</option>
+                <option value="footwear">Footwear</option>
+                <option value="sports">Sports & Fitness Store</option>
+                <option value="personare">Personal Care Appliances</option>
+                <option value="Jewel">Jewellery</option>
+                <option value="schoolsupply">School Supplies</option>
+                <option value="baby">Baby care</option>
+                <option value="cleansupply">Cleaning Supply</option>
+                <option value="furniture">Furniture</option>
+                <option value="homedecor">Home Decor & Lighting</option>
+                <option value="petsupply">Pet Supplies</option>
+                <option value="gardening">Gardening</option>
+                <option value="food">Food Essentials</option>
+                <option value="book">Books</option>
+                <option value="autoacc">Automobile Accessories</option>
+                <option value="stationery">Stationery</option>
+                <option value="instrytool">Industrial & Scientific Tool</option>
+                <option value="others">New Category</option>
+                
+            </select>
+            <label class="placeholder-label" for="dropdown">Category</label>
+            <br><br>
+        </div>
+       
+            <div id="textBar" class="text-bar" >
+    
+                <input type="text" id="newOptionInput" placeholder="Enter text" class="textbox tb1">
+                <button id="addOptionButton" class="sub-button">Add Option</button>
+        
+            </div>
+            <br><br>
+            
+            <form action="">
+                <div class="age">
+                <input type="radio" name="age" id="new" class="age">
+                <label for="age">New</label>
+                <input type="radio" name="age" id="old" class="age">
+                <label for="age">Old</label>
+                </div>
+                <br><br>            <div class="text-box tb2">
+                <input type="text" id="textInput" class="topname" required>
+                <label for="textInput">Price</label>
+            </div>
+            <br><br>
+            <div class="text-box tb3">
+                <input type="text" id="textInput" class="topname" required>
+                <label for="textInput">Quantity</label>
+            </div>
+            <br><br>
+                
+            <div class="text-box tb4">
+            <textarea name="" id="textInput1" class="topname" required>
+            </textarea>
+            <label for="textInput1"> Description</label>
+    
+            </div>
+            <br><br>
+            <form action="upload.php" method="post" enctype="multipart/form-data">
+                <input type="file" name="images[]" multiple >
+                <input type="submit" value="Done" class="imgbtn">
+            </form>        
+            <br><br>
+
+            <input type="submit" value="Upload" class="sub-button">
+        </div>
+            
+    <script src="sellfix.js"></script>
+    
+</body>
+</html>

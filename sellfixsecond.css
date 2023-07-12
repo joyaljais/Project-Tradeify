@@ -17,6 +17,12 @@ body{
     font-family: 'Roboto Condensed', sans-serif;
 }
 
+textarea{
+    
+    height: 180px;
+}
+
+
 .sub-button, .imgbtn{
     color: white;
     margin: 0px 14px;
